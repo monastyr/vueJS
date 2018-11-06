@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>14 Multiple Vue instances</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="14.css" />
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <h1>14 Multiple Vue instances</h1>
+
+    <div id="vue-app-one">
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
+    </div>
+
+    <div id="vue-app-two">
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
+        <button v-on:click="changeTitle">Change app one title</button>
+
+    </div>
+    <script src="14.js"></script>
+</body>
+</html>
+
+

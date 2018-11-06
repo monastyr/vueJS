@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>4 Data Binding</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="4.css" />
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <!-- https://vuejs.org/v2/guide/installation.html -->
+    <div id="vue-app">
+        <h1>{{ name }}</h1>
+        <!-- UWAGA NA LITEROWKI w nazwach argumentow -->
+        <a v-bind:href="website">The net ninja</a>
+        <input type="text" v-bind:value="name">
+        <p v-html="websiteTag"></p>
+    </div>
+
+    <script src="4.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>6 Events Modifier</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="6.css" />
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <!-- https://vuejs.org/v2/guide/events.html#Event-Modifiers -->
+    <div id="vue-app">
+        <button @click.once="add()"> Add a year </button>
+        <button v-on:click="subtract(1)"> Substract a year </button>
+        <button @dblclick="add(10)"> Add 10 year </button>
+        <button v-on:dblclick="subtract(10)"> Substract 10 year </button>
+        <p>My age is {{age}} </p>
+        <!-- nie potrzba ponizej jawnie pisac v-on:mousemove="updateXY(event)" bo nie zadzaiała-->
+        <!-- tak samo niepotrzbene sa nawiasy -->
+        <div id="canvas" @mousemove="updateXY"> {{x}} , {{y}}</div>
+        <a v-on:click.prevent="click" href="http://www.google.com">Gugle</a>
+
+    </div>
+
+    <script src="6.js"></script>
+
+</body>
+</html>
+
+

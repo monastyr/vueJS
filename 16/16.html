@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>16 Refs</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="16.css" />
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <h1>16 Refs</h1>
+
+    <div id="vue-app">
+        <input type="text" ref="input"/>
+        <button v-on:click="readRefs">Submit</button>
+        <p>You fave food id:  {{output}} </p>
+
+        <div ref="test">hello</div>
+    </div>
+    <script src="16.js"></script>
+</body>
+</html>
+
+

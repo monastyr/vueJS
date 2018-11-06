@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>12 Looping throught lists</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="12.css" />
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>12 Looping throught lists</h1>
+        <ul>
+            <li v-for="(character, index) in characters">{{index}}.{{ character }}</li>
+        </ul>
+        <ul>
+            <li v-for="ninja in ninjas">{{ninja.name}} - {{ninja.age}} </li>
+        </ul>
+
+        <ul>
+            <li v-for="(ninja, index) in ninjas">{{index}}.{{ninja.name}} - {{ninja.age}} </li>
+        </ul>
+
+        <div v-for="(ninja, index) in ninjas">
+            <h3>{{index}}.{{ninja.name}}</h3>
+            <p>{{ninja.age}}</p>
+        </div>
+
+        <template v-for="(ninja, index) in ninjas">
+                <h3>{{index}}.{{ninja.name}}</h3>
+                <p>{{ninja.age}}</p>
+        </template>
+
+        <template v-for="ninja in ninjas">
+            <div v-for="(val,key) in ninja">
+                <p>{{val}}.{{key}}</p>
+            </div>
+        </template>
+    </div>
+
+    <script src="12.js"></script>
+
+</body>
+</html>
+
+

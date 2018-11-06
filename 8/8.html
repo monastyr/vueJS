@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>8 Two-Way Data Bind</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="8.css" />
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>2-Ways data binding</h1>
+        <label>Name:</label>
+        <input type="text" v-on:keyup="logName"/>
+        <span>{{name}}</span>
+        <label>Age:</label>
+        <input type="text" v-model="age">
+        <span>{{age}}</span>
+
+    </div>
+
+    <script src="8.js"></script>
+
+</body>
+</html>
+
+
